@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sportify - Consultation sportive en ligne</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div id = "wrapper">
+		<header id = "titre">
+			<div class="titre-logo">
+			<h1> Sportify : Consultation Sportive - Rendez-vous</h1>
+			<img src="Sportify.jpg" height="130" width="200">
+			</div>
+		</header>
+		<nav>
+			<ul class="menu">
+				<li> <a href="main.html">Accueil</a></li>
+				<li> 
+					<div class="sous-menu">
+					<a href="parcours.html">Tout Parcourir</a>
+					<ul>
+						<li><a href="activites-sportives.html">Activités sportives</a></li>
+						<li><a href="sports-competition.html">Les Sports de compétition</a></li>
+						<li><a href="salle_OMNES.html">Salle de sport Omnes</a></li>
+					</ul>
+				</div>
+				</li>
+				<li> <a href="recherche.html">Recherche</a></li>
+				<li> <a href="rdv.html">Rendez-vous</a></li>
+				<li> <a href="compte.html">Votre Compte</a></li>
+			</ul>
+		</nav>
+		<section >
+			<div class="container">
+				<h3> Inscription </h3>
+				<div class="sign-wrapper">
+					<form action="inscription.php" class="form_ins" method="POST">
+						<div class="input-box">
+							<label> Nom </label>
+							<input type="text" name="nom" placeholder="Entrez votre nom" required>
+						</div>
+						<div class="input-box">
+							<label> Prénom </label>
+							<input type="text" name="prenom" placeholder="Entrez votre prénom" required>
+						</div>
+						<div class="input-box">
+							<label> Numéro d'identifiant </label>
+							<input type="text" name="ID" placeholder="Entrez votre numérro d'identifiant" required>
+						</div>
+						<div class="input-box">
+							<label> Adresse-Mail </label>
+							<input type="text" name="Email" placeholder="Entrez votre E-mail" required>
+						</div>
+						<div class="input-box">
+							<label> Mot de Passe </label>
+							<input type="password" name="mdp" placeholder="Entrez un mot de passe" required>
+						</div>
+						<div class="select-box">
+							<select name="Etablissement">
+								<option hidden> Etablissement choisi </option>
+								<option> OMNES Paris </option>
+								<option> OMNES London</option>
+								<option> OMNES Tokyo </option>
+							</select>
+						</div>
+						<div class="select-box">
+							<select name="type">
+								<option hidden> Type d'utilisateur </option>
+								<option> Client </option>
+								<option> Coach ou Personnel</option>
+								<option> Administrateur </option>
+							</select>
+						</div>
+						<button name="Soumettre">Soumettre </button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<img src="carte.jpg" align="right" height="200" width="500">
+			<div class="coordonnées">
+				<h3> Contact </h3>
+				<p> E-mail : <a href="contact@sportify.com"> contact@sportify.com</a></p>
+				<p> Téléphone : </p>
+			</div>
+			<div class="adresse">
+				<h3> Adresse du siège social</h3>
+				<p> 10 Rue Sextius Michel</p>
+				<p> 75015 Paris, France</p>
+			</div>
+			
+		</footer>
+</div>
+</body>
+</html>
