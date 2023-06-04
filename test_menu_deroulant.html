@@ -1,0 +1,86 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu déroulant avec sous-boutons</title>
+  <style>
+    #mon-bouton {
+      background-color: #ccc;
+      padding: 10px;
+      border: none;
+      color: #fff;
+    }
+
+    #menu-deroulant {
+      display: none;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #eee;
+    }
+
+    #menu-deroulant li {
+      padding: 5px;
+    }
+
+    #mon-bouton:hover + #menu-deroulant {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Menu déroulant avec sous-boutons</h1>
+
+  <button id="mon-bouton">Survolez-moi !</button>
+  
+  <ul id="menu-deroulant">
+    <li>Option 1</li>
+    <li>Option 2</li>
+    <li>Option 3</li>
+  </ul>
+
+  <script>
+    const bouton = document.getElementById("mon-bouton");
+    const menuDeroulant = document.getElementById("menu-deroulant");
+    const options = menuDeroulant.getElementsByTagName("li");
+
+    bouton.addEventListener("mouseover", function() {
+      menuDeroulant.style.display = "block";
+    });
+
+    bouton.addEventListener("mouseout", function() {
+      menuDeroulant.style.display = "none";
+    });
+
+    for (let i = 0; i < options.length; i++) {
+      options[i].addEventListener("click", function() {
+        const optionSelectionnee = options[i].innerText;
+        console.log("Option sélectionnée : " + optionSelectionnee);
+      });
+    }
+  </script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma page HTML</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-2">Colonne 1</div>
+      <div class="col-2">Colonne 2</div>
+      <div class="col-2">Colonne 3</div>
+      <div class="col-2">Colonne 4</div>
+      <div class="col-2">Colonne 5</div>
+    </div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

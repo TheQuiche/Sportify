@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sportify - Consultation sportive en ligne - Activités Sportives</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> 
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Section principal qui affiche le titre du site -->
+	<div id = "wrapper">
+		<header id = "titre">
+			<div class="titre-logo">
+			<h1> Sportify : Consultation Sportive</h1>
+			<img src="Sportify.jpg" height="130" width="200">
+			</div>
+		</header>
+    <!-- Menu de navigation du site web-->
+		<nav>
+			<ul class="menu">
+				<li> <a href="main.html">Accueil</a></li>
+				<li> 
+          <!-- Sous-menu de navigation de la partie "TOUT PARCOURIR"-->
+					<div class="sous-menu">
+					<a href="parcours.html">Tout Parcourir</a>
+					<ul>
+						<li><a href="activites-sportives.html">Activités sportives</a></li>
+						<li><a href="sports-competition.html">Les Sports de compétition</a></li>
+						<li><a href="salle_OMNES.html">Salle de sport Omnes</a></li>
+					</ul>
+				</div>
+				</li>
+				<li> <a href="recherche.html">Recherche</a></li>
+				<li> <a href="rdv.html">Rendez-vous</a></li>
+				<li> <a href="compte.html">Votre Compte</a></li>
+			</ul>
+		</nav>
+		<section>
+      <!-- Section - Activités Sportives -->
+		<div class="container">
+			<h3> Activités Sportives</h3>
+			<div class="row">
+				<div class="col">
+					<div id="Musculation">
+						<img src="Muscu_icone.jpg" width="100" height="100">
+            <!-- Partie Musculation-->
+						<p> Musculation</p>
+						<body>
+              <div class="coach-card">
+                <div class="icone">
+                  <img src="arnold_schwarzenegger.jpg" alt="Photo du coach">
+                  <div class="description">
+                    <h3>Arnold Schwarzenegger</h3>
+                    <p>Coach Musculation</p>
+                    <p>sc119</p>
+                    <p>0799988812</p>
+                    <p>aschwarzenegger@omnes.fr</p>
+                  </div>
+                  <div class="calendar">
+                    <table class="calendar">
+                      <!-- Tableau des RDV-->
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Lundi</th>
+                          <th>Mardi</th>
+                          <th>Mercredi</th>
+                          <th>Jeudi</th>
+                          <th>Vendredi</th>
+                          <th>Samedi</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>AM</th>
+                          <td class="filled"></td>
+                          <td></td>
+                          <td class="filled"></td>
+                          <td></td>
+                          <td class="filled"></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th>PM</th>
+                          <td></td>
+                          <td class="filled"></td>
+                          <td class="filled"></td>
+                          <td class="filled"></td>
+                          <td></td>
+                          <td class="filled"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="buttons">
+                    <button>Rendez-vous</button>
+                    <button><a href="chat.html"> Communiquer avec le coach</a></button>
+                    <button>Voir son CV</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Partie FITNESS-->
+                <div class="col">
+                  <div id="Fitness">
+                    <img src="Fitness_icone.jpg" width="100" height="100">
+                    <p> Fitness</p>
+                      <div class="coach-card">
+                        <img src="jennifer_lopez.jpg" alt="Photo du coach">
+                        <div class="description">
+                          <h3>Jennifer Lopez</h3>
+                          <p>Coach Fitness</p>
+                          <p>sc 202</p>
+                          <p>0789867856</p>
+                          <p>jlopez@omnes.fr</p>
+                        </div>
+                        <!-- Affochage du planning de RDV-->
+                        <div class="calendar">
+                          <table class="calendar">
+                            <thead>
+                              <tr>
+                                <th></th>
+                                <th>Lundi</th>
+                                <th>Mardi</th>
+                                <th>Mercredi</th>
+                                <th>Jeudi</th>
+                                <th>Vendredi</th>
+                                <th>Samedi</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>AM</th>
+                                <td class="filled"></td>
+                                <td></td>
+                                <td class="filled"></td>
+                                <td></td>
+                                <td class="filled"></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th>PM</th>
+                                <td></td>
+                                <td class="filled"></td>
+                                <td class="filled"></td>
+                                <td class="filled"></td>
+                                <td></td>
+                                <td class="filled"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="buttons">
+                          <button>Rendez-vous</button>
+                          <button><a href="chat.html"> Communiquer avec le coach</a></button>
+                          <button>Voir son CV</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <!-- Partie BIKING-->
+                    <div id="Biking">
+                      <img src="Biking_icone.jpg" width="100" height="100">
+                      <p> Biking</p>
+                      <div class="coach-card">
+                <img src="tadej_pogacar.jpg" alt="Photo du coach">
+                <div class="description">
+                  <h3>Tadeg Pogacar</h3>
+                  <p>Coach Fitness</p>
+                  <p>sc205</p>
+                  <p>0711124536</p>
+                  <p>tpogacar@omnes.fr</p>
+                </div>
+                <!-- Afficahge du planning RDV-->
+                <div class="calendar">
+                  <table class="calendar">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>AM</th>
+                        <td class="filled"></td>
+                        <td></td>
+                        <td class="filled"></td>
+                        <td></td>
+                        <td class="filled"></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th>PM</th>
+                        <td></td>
+                        <td class="filled"></td>
+                        <td class="filled"></td>
+                        <td class="filled"></td>
+                        <td></td>
+                        <td class="filled"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="buttons">
+                  <button>Rendez-vous</button>
+                  <button><a href="chat.html"> Communiquer avec le coach</a></button>
+                  <button>Voir son CV</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- Partie Cardio-Training-->
+            <div id="Cardio-Training">
+              <img src="cardio_icone.jpg" width="100" height="100">
+              <p> Cardio-Training</p>
+              <div class="coach-card">
+                <img src="gigi_hadid.jpg" alt="Photo du coach">
+                <div class="description">
+                  <h3>Gigi Hadid</h3>
+                  <p>Coach Cardio-training</p>
+                  <p>sc201</p>
+                  <p>0789786756</p>
+                  <p>ghadid@omnes</p>
+                </div>
+                <div class="calendar">
+                  <table class="calendar">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>AM</th>
+                        <td class="filled"></td>
+                        <td></td>
+                        <td class="filled"></td>
+                        <td></td>
+                        <td class="filled"></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th>PM</th>
+                        <td></td>
+                        <td class="filled"></td>
+                        <td class="filled"></td>
+                        <td class="filled"></td>
+                        <td></td>
+                        <td class="filled"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="buttons">
+                  <button>Rendez-vous</button>
+                  <button><a href="chat.html"> Communiquer avec le coach</a></button>
+                  <button>Voir son CV</button>
+                </div>
+              </div>
+            </div>				
+          </div>
+          <div class="col">
+            <!-- Section - cours collectifs --->
+            <div id="Cours-collectifs">
+              <img src="Cours-collectifs.jpg" width="100" height="100">
+              <p> Cours Collectifs</p>
+              <div class="coach-card">
+                <img src="chris-powell.jpg" alt="Photo du coach">
+                <div class="description">
+                  <h3>Chris Powell</h3>
+                  <p>Coach Cours Collectifs</p>
+                  <p>sc207</p>
+                  <p>0786567812</p>
+                  <p>cpowell@omnes.fr</p>
+                </div>
+                <div class="calendar">
+                  <table class="calendar">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>AM</th>
+                        <td class="filled"></td>
+                        <td></td>
+                        <td class="filled"></td>
+                        <td></td>
+                        <td class="filled"></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th>PM</th>
+                        <td></td>
+                        <td class="filled"></td>
+                        <td class="filled"></td>
+                        <td class="filled"></td>
+                        <td></td>
+                        <td class="filled"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="buttons">
+                  <button>Rendez-vous</button>
+                  <button><a href="chat.html"> Communiquer avec le coach</a></button>
+                  <button>Voir son CV</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>			
+    </section>
+
+<!-- Section Pied de page -->
+		<footer>
+			<img src="carte.jpg" align="right" height="200" width="500">
+			<div class="coordonnées">
+				<h3> Contact </h3>
+				<p> E-mail : <a href="contact@sportify.com"> contact@sportify.com</a></p>
+				<p>Téléphone : <a href= "0784882957">0784882957</a></p>
+			</div>
+			<div class="adresse">
+				<h3> Adresse du siège social</h3>
+				<p> 10 Rue Sextius Michel</p>
+				<p> 75015 Paris, France</p>
+			</div>
+			
+		</footer>
+	</div>
+</body>
+</html>

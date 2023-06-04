@@ -1,0 +1,1027 @@
+/*Fichier CSS reprenant tous les styles utilisés pour le site Web
+/*Conteneur principale du site*/
+		#wrapper{
+			width: auto;
+			height: auto;
+			position: relative;
+			margin: auto;
+			border: 2px solid black;
+			border-radius: 6px;
+			background-image: url("Sport Page WEB.jpg!d");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		
+		#titre{
+			overflow: auto;
+			text-align: center;
+		}
+		@keyframes colorChange{
+			0%{background-color: black;}
+			25%{background-color: black; opacity: 0.7}
+			50%{background-color: black;opacity: 0.6}
+			75%{background-color: black; opacity: 0.7}
+			100%{background-color: black;}
+		}
+		.titre-logo{
+			position: relative;
+			 display: flex;
+			 justify-content: space-around;
+			 align-items: center;
+			 background-color: black;
+			 opacity: 0.8;
+			 padding: 50px;	
+			 animation: colorChange 5s linear infinite;
+  		}
+		.titre-logo h1{
+			position: absolute;
+			right: 50%;
+			transform: translateX(50%);
+			font-family: Georgia, serif;
+			font-weight: bold;
+			color: white;
+			text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.5);
+			padding: 20px;
+			border-radius: 10px;
+		}
+		.titre-logo img{
+			left: -340%;
+			transform: translateX(-340%);
+		}
+		/* Propriétés du menu*/
+		ul.menu{
+			padding: 0;
+			margin: 150px auto;
+			list-style-type: none;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+		}
+		ul.menu li{
+			float: center;
+			background-color: black;
+			border: 1px solid;
+			border-color: white;
+			border-radius: 5px;
+			margin-left: 5px;
+		}
+		ul.menu li a{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+
+		}
+		ul.menu li a:hover{
+			background: linear-gradient(-135deg, black, gray);
+		}
+		/*Propriétés du sous-menu du menu principal "Tout Parcourir"*/
+		.sous-menu ul {
+			display: none;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			background-color: #eee;
+		}
+		.sous-menu ul li {
+			padding: 5px;
+		}
+		.sous-menu:hover ul {
+			display: block;
+		}
+		/* Propriétés de la section bienvenue*/
+		#bienvenue{
+			padding: 20px;
+			background-color: black;
+		}
+		#bienvenue h2{
+			font-size: 24px;
+			color: white;
+			text-align: left;
+		}
+		#bienvenue p{
+			font-size: 16px ;
+			color:white;
+			margin-bottom: 20px ;
+			text-align: left;
+			text-indent: 2em;
+		}
+		#bienvenue img{
+			border: 2px solid;
+			border-color: white;
+			border-radius: 2px;
+		}
+
+		/*Propriétés de la section evenement-semaine*/
+		#evenement-semaine{
+			padding: 20px;
+			background-color: white;
+		}
+		#evenement-semaine h2{
+			font-size: 24px;
+			color: #333;
+			text-align: center;
+		}
+    .carousel-evenement-wrapper{
+    	position: relative;
+    	max-width: 48rem;
+    	margin-left: auto;
+  		margin-right: auto;
+  		text-align: center;
+    }
+    .carousel-evenement-slider{
+    	display: flex;
+    	aspect-ratio: 16/9;
+    	overflow-x: auto ;
+    	scroll-snap-type: x mandatory;
+    	scroll-behavior: smooth;
+    	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%,0.25);
+    	border-radius: 0.5rem;
+    	-ms-overflow-style : none;
+    	scrollbar-width: none;
+    }
+
+    .carousel-evenement-slider::-webkit-scrollbar{
+    	display: none;
+    }
+    .carousel-evenement-slider img{
+    	flex: 1 0 100%;
+    	scroll-snap-align: start ;
+    	object-fit: cover;
+    }
+
+    .carousel-evenement-nav{
+    	display: flex;
+    	column-gap: 1rem;
+    	position: absolute;
+    	bottom: 1.25rem;
+    	left: 50%;
+    	transform: translateX(-50%);
+    	z-index: 1;
+    }
+
+    .carousel-evenement-nav a{
+    	width: 0.5rem;
+    	height: 0.5rem;
+    	border-radius: 50%;
+    	background-color: #fff;
+    	opacity: 0.75;
+    	transition: opacity ease 250ms;
+    }
+
+    .carousel-evenement-nav a:hover{
+    	opacity: 1;
+    }
+    
+		/*Propriétés du bas de page (footer)*/
+		footer{
+			background-color: white;
+			padding: 40px;
+			text-align: left;
+		}
+		footer h3{
+			font-size: 18px;
+			color: #333;
+		}
+		footer p{
+			font-size: 14px;
+			color: #666;
+			margin-bottom: 10px;
+		}
+		footer img{
+			border: 2px solid;
+			border-color: black;
+			border-radius: 10px;
+		}
+		footer .coordonnées{
+			margin-bottom: 10px;
+		}
+		footer .adresse{
+			margin-bottom: 10px;
+		}
+
+		/*Propriétés de la page "Tout Parcourir"*/
+		/* 1 - Activités sportives*/
+		#activité_sportive p{
+			color: black; 
+			text-align: center;
+			margin-top: 5px; 
+			background-color: whitesmoke;
+			border-radius: 5px;
+			font-size: 21px;         
+		}
+		#activité_sportive img{
+			border: 2px solid;
+			border-color: white;
+			border-radius: 10px;
+		}
+		#activité_sportive span{
+			color: white;
+			font-style: italic;
+			font-size: 15px;
+		}
+		#activité_sportive a{
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+		}
+		/* 2 - Sports de compétition*/
+		#sports-competition p{
+			color: black;
+			text-align: center;
+			margin-top: 5px;
+			background-color: whitesmoke;
+			border-radius: 5px;
+			font-size: 21px;                 
+		}
+		#sports-competition img{
+			border: 2px solid;
+			border-color: white;
+			border-radius: 10px;
+		}
+		#sports-competition span{
+			color: white;
+			font-style: italic;
+			font-size: 15px;
+		}
+		#sports-competition a{
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+		}
+		/* 3 - Salle de sport Omnes*/
+		#salle_OMNES p{
+			color: black;
+			text-align: center;
+			margin-top: 5px;
+			background-color: whitesmoke;
+			border-radius: 5px;
+			font-size: 21px;                   
+		}
+		#salle_OMNES span{
+			color: white;
+			font-style: italic;
+			font-size: 15px;
+		}
+		#salle_OMNES img{
+			border: 2px solid;
+			border-color: white;
+			border-radius: 10px;
+		}
+		#salle_OMNES a{
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+		}
+
+		/* PARTIE : TOUT PARCOURIR*/
+		.container{
+			background-color: black;
+			padding: 80px;
+			margin-bottom: 50px;
+			border-radius: 10px;
+			box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+		}
+		.container h3{
+			text-align: center;
+			color: white;
+			font-style: italic;
+			margin-bottom: 50px;
+		}
+
+		.col {
+			text-align: center;
+		}
+		#recherche {
+			background-color: black;
+			padding: 100px;
+			justify-content: center;
+			margin-bottom: 50px;
+			border-radius: 10px;
+			box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+		}
+		#recherche h2{
+			color: white;
+			text-align: center;
+			font-size: 48px;
+			font-family: 'Arial',sans-serif;
+}
+
+#recherche form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#recherche input[type="search"] {
+  height: 40px;
+  line-height: 28px;
+  padding: 0 3rem;
+  width: 700px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #D9E8D8;
+  color: #0d0c22;
+  box-shadow: 0 0 5px #C1D9BF, 0 0 0 10px #f5f5f5eb;
+  transition: .3s ease;
+}
+
+#recherche input[type="submit"] {
+  height: 40px;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+#recherche input[type="submit"]:hover {
+  background-color: #45a049;
+
+}
+		/*PARTIE Activités sportives*/
+		#Musculation p{
+			font-size: 14px;
+			color: white;
+			text-align: center;
+			font-weight: bold;
+		}
+		#Musculation img{
+			margin-left: 0px;
+		}
+		#Fitness p{
+			font-size: 14px;
+			color: white;
+			text-align: center;
+		}
+		#Fitness img{
+			margin-left: 0px;
+		}
+		#Biking p{
+			font-size: 14px;
+			color: white;
+			text-align: center;
+		}
+		#Biking img{
+			margin-left: 0px;
+		}
+		#Cardio-Training p{
+			font-size: 14px;
+			color: white;
+			text-align: center;
+		}
+		#Cardio-Training img{
+			margin-left: 0px;
+		}
+		#Cours-collectifs p{
+			font-size: 14px;
+			color: white;
+			text-align: center;
+		}
+		#Cours-collectifs img{
+			margin-left: 0px;
+		}
+
+		/*PARTIE Sports de compétition*/
+		#Basketball p{
+			font-size: 14px;
+			color: white;
+			text-align: center;
+		}
+		#Basketball img{
+			margin-left: 0px;
+		}
+		#Football p{
+			font-size: 14px;
+			color: white;
+			text-align: center;
+		}
+		#Football img{
+			margin-left: 0px;
+		}
+		#Rugby p{
+			font-size: 14px;
+			color: white;
+			text-align: center;
+		}
+		#Rugby img{
+			margin-left: 0px;
+		}
+		#Tennis p{
+			font-size: 14px;
+			color: white;
+			text-align: center;
+		}
+		#Tennis img{
+			margin-left: 0px;
+		}
+		#Natation p{
+			font-size: 14px;
+			color: white;
+			text-align: center;
+		}
+		#Natation img{
+			margin-left: 0px;
+		}
+		#Plongeon p{
+			font-size: 14px;
+			color: white;
+			text-align: center;
+		}
+		#Plongeon img{
+			margin-left: 0px;
+		}
+
+		/*PARTIE : Salle de sport OMNES*/
+		#image_salle img{
+			border-radius: 10px;
+			border: 2px solid;
+			border-color: white;
+			margin-left: 50px;
+		}
+		#coordonnées_salle p{
+			text-align: left;
+			color: white;
+		}
+		#coordonnées_salle button{
+			padding: 20px;
+			background-color: whitesmoke;
+			font-weight: bold;
+			border-radius: 10px;
+		}
+		#coordonnées_salle a{
+			text-decoration: none;
+			color: black;
+		}
+    #services button{
+    	padding: 10px;
+    	background-color: whitesmoke;
+    	border-radius: 5px;
+    	font-weight: bold;
+    	text-align: center;
+    }
+
+    .carousel-salles{
+    	padding: 2rem;
+    	background-color: black;
+    }
+    .carousel-salles h3{
+    	text-align: center;
+			color: white;
+			font-style: italic;
+			margin-bottom: 50px;
+    }
+    .carousel-wrapper{
+    	position: relative;
+    	max-width: 48rem;
+    	margin: 0 auto;
+    }
+    .carousel-slider{
+    	display: flex;
+    	aspect-ratio: 16/9;
+    	overflow-x: auto ;
+    	scroll-snap-type: x mandatory;
+    	scroll-behavior: smooth;
+    	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%,0.25);
+    	border-radius: 0.5rem;
+    	-ms-overflow-style : none;
+    	scrollbar-width: none;
+    }
+
+    .carousel-slider::-webkit-scrollbar{
+    	display: none;
+    }
+    .carousel-slider img{
+    	flex: 1 0 100%;
+    	scroll-snap-align: start ;
+    	object-fit: cover;
+    }
+
+    .carousel-nav{
+    	display: flex;
+    	column-gap: 1rem;
+    	position: absolute;
+    	bottom: 1.25rem;
+    	left: 50%;
+    	transform: translateX(-50%);
+    	z-index: 1;
+    }
+
+    .carousel-nav a{
+    	width: 0.5rem;
+    	height: 0.5rem;
+    	border-radius: 50%;
+    	background-color: #fff;
+    	opacity: 0.75;
+    	transition: opacity ease 250ms;
+    }
+
+    .carousel-nav a:hover{
+    	opacity: 1;
+    }
+
+    /*Propriétés du compte - Formulaire de connexion */
+    .login-wrapper{
+    	width: 700px;
+    	margin: 0px auto;
+    	background: #fff;
+    	border-radius: 5px;
+    	box-shadow: 0px 15px 20px rgba(255,255,255,0.1);
+    }
+    .login-wrapper form{
+    	padding: 10px 30px 50px 30px;
+    }
+    .login-wrapper form .field{
+    	height: 50px;
+    	width: 100%;
+    	margin-top: 20px;
+    	position: relative;
+    }
+    .login-wrapper form .field input{
+    	height: 100%;
+    	width: 100%;
+    	outline: none;
+    	font-size: 17px;
+    	padding-left: 20px;
+    	border: 1px solid lightgrey;
+    	border-radius: 25px;
+    	transition: all 0.3s ease;
+    }
+    .login-wrapper form .field input:focus,
+    form .field input:valid{
+    	border-color: black;
+    }
+    .login-wrapper form .field label{
+    	position: absolute;
+    	top: 50%;
+    	left: 20px;
+    	color: black;
+    	font-weight: 400;
+    	font-size: 17px;
+    	pointer-events: none;
+    	transform: translateY(-50%);
+    	transition: all 0.3s ease;
+    }
+    form .field input:focus ~ label,form .field input:valid ~ label{
+    	top: 0%;
+    	font-size: 16px;
+    	color: black;
+    	background: #fff;
+    	transform: translateY(-50%);
+    }
+    form .contenu{
+    	display: flex;
+    	width: 100%;
+    	height: 50px;
+    	font-size: 16px;
+    	align-items: center;
+    	justify-content: space-around;
+    }
+    form .contenu .checkbox{
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    }
+    form .contenu input{
+    	width: 15px;
+    	height: 15px;
+    	background: red;
+    }
+    form .contenu label{
+    	color: black;
+    	user-select: none;
+    	padding-left: 5px;
+    }
+    form .content .pass-link{
+    	color: "";
+    }
+    form .field input[type="submit"]{
+    	color: #fff;
+    	border: none;
+    	padding-left: 0;
+    	margin-top: -10px;
+    	font-size: 20px;
+    	font-weight: 500;
+    	cursor: pointer;
+    	background: linear-gradient(-135deg, black, gray);
+    	transition: all 0.3s ease;
+    }
+    form .field input[type="submit"]:active{
+    	transform: scale(0.95);
+    }
+    form .signup-link{
+    	color: #262626;
+    	margin-top: 20px;
+    	text-align: center;
+    }
+    form .pass-link a,
+    form .signup-link a{
+    	color: #4158d0;
+    	text-decoration: none;
+    }
+    form .pass-link a:hover,
+    form .signup-link a:hover{
+    	text-decoration: underline;
+    }
+
+    /*Propriétés pour les boutons des utilisateurs*/
+    .boutons{
+    	text-align: center;
+    }
+    .boutons button{
+    	position: relative;
+    	height: 60px;
+    	width: 200px;
+    	border-radius: 50px;
+    	border: none;
+    	border: none;
+    	outline: none;
+    	background: #111;
+    	color: #fff;
+    	font-size: 16px;
+    	font-weight: 500;
+    	letter-spacing: 2px;
+    	text-transform: uppercase;
+    	cursor: pointer;
+    	transition: background 0.5s;
+    	margin: 2px auto;
+    }
+    .boutons button:first-child:hover{
+    	background: linear-gradient(90deg, black, darkgray, gray, lightgrey);
+    	background-size: 400%;
+    }
+    .boutons button:last-child:hover{
+    	background: linear-gradient(90deg, lightgrey, gray,darkgray, black);
+    	background-size: 400%;
+    }
+    .boutons button:first-child:before,.boutons button:last-child:before{
+    	content: '';
+    	position: absolute;
+    	background: inherit;
+    	top: -5px;
+    	right: -5px;
+    	bottom: -5px;
+    	left: -5px;
+    	border-radius: 50px;
+    	filter: blur(20px);
+    	opacity: 0;
+    	transition: opacity 0.5s;
+    }
+    .boutons button:first-child:hover:before,.boutons button:last-child:hover:before{
+    	opacity: 1;
+    	z-index: -1;
+    }
+    .boutons button:hover{
+    	z-index: 1;
+    	animation: glow 8s linear infinite;
+    }
+    .boutons button a{
+    	text-decoration: none;
+    	color: white;
+    }
+    @keyframes glow {
+    	0%{
+    		background-position: 0%;
+    	}
+    	100%{
+    	 background-position: 400%;
+    	}
+    }
+
+    /*Propriétés du compte - Formulaire d'inscription */
+    .sign-wrapper{
+    	width: 900px;
+    	margin: 0px auto;
+    	background: #fff;
+    	border-radius: 5px;
+    	box-shadow: 0px 15px 20px rgba(255,255,255,0.1);
+    }
+    .sign-wrapper .form_ins{
+    	margin-top: 30px;
+    	padding: 10px 30px 50px 30px;
+    }
+    .form_ins .input-box{
+    	width: 100%;
+    	margin-top: 2àpx;
+    }
+    .input-box label{
+    	color: #333;
+    	margin-left: 10px;
+    }
+    .form_ins :where(.input-box input, .select-box){
+    	position: relative;
+    	height: 50px;
+    	width: 800px;
+    	outline: none;
+    	font-size: 1rem;
+    	color: #707070;
+    	margin-top: 8px;
+    	border: 1px solid #ddd;
+    	border-radius: 6px;
+    	padding: 0 15px;
+    }
+    .input-box input:focus{
+    	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    }
+    .select-box select{
+    	height: 100%;
+    	width: 100%;
+    	outline: none;
+    	border: none;
+    	color: #707070;
+    	font-size: 1rem;
+    }
+    .form_ins button{
+    	height: 55px;
+    	width: 100%;
+    	color: #fff;
+    	font-size: 1rem;
+    	font-weight: 400;
+    	margin-top: 30px;
+    	border: none;
+    	cursor: pointer;
+    	transition: all 0.2s ease;
+    	background: linear-gradient(-135deg, black, gray);
+    	border-radius: 5px;
+    }
+    /*Propriétés de RDV*/
+    .Prise-RDV{
+    	margin-top: 50px;
+    	padding: 300px;
+    	background-color: whitesmoke;
+    	border-radius: 10px;
+    }
+
+    .form_signup{
+    	margin-top: 50px;
+    	padding: 300px;
+    	background-color: whitesmoke;
+    	border-radius: 10px;
+    }     
+   .coach-card {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  color: #000;
+}
+
+.coach-card img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+}
+
+.coach-card h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.coach-card p {
+  margin: 0;
+  color: #;
+}
+
+.coach-card .description {
+  margin-bottom: 10px;
+}
+
+.coach-card .buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.coach-card .buttons button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.coach-card .buttons button:hover {
+  background-color: #333;
+}
+.coach-card .buttons a{
+	text-decoration: none;
+	color: #fff;
+}
+
+    .calendar {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+
+.calendar thead th {
+  background-color: #333;
+  color: #fff;
+}
+
+.calendar tbody th {
+  background-color: #f9f9f9;
+  font-weight: normal;
+}
+
+.calendar tbody td {
+  background-color: #fff;
+}
+
+.calendar .filled {
+  background-color: #e0e0e0;
+}
+
+  .coach-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.coach-info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.coach-details {
+  text-align: left;
+}
+
+.coach-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.coach-details p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.calendar-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.timeslot-header {
+  display: flex;
+}
+
+.timeslot-cell {
+  width: 100px;
+  height: 30px;
+  background-color: #ccc;
+  border: 1px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeslot-row {
+  display: flex;
+}
+
+.timeslot-cell.available {
+  background-color: white;
+  cursor: pointer;
+}
+
+.timeslot-cell.unavailable {
+  background-color: blue;
+  cursor: not-allowed;
+}
+
+.btn {
+  display: block;
+  margin: 20px auto;
+}
+
+/*Propriétés du profil admin*/
+.form_admin form{
+    	padding: 10px 30px 50px 30px;
+    }
+    .login-wrapper form{
+    	padding: 10px 30px 50px 30px;
+    }
+    .login-wrapper form .field{
+    	height: 50px;
+    	width: 100%;
+    	margin-top: 20px;
+    	position: relative;
+    }
+    .login-wrapper form .field input{
+    	height: 100%;
+    	width: 100%;
+    	outline: none;
+    	font-size: 17px;
+    	padding-left: 20px;
+    	border: 1px solid lightgrey;
+    	border-radius: 25px;
+    	transition: all 0.3s ease;
+    }
+    .login-wrapper form .field input:focus,
+    form .field input:valid{
+    	border-color: black;
+    }
+    .login-wrapper form .field label{
+    	position: absolute;
+    	top: 50%;
+    	left: 20px;
+    	color: black;
+    	font-weight: 400;
+    	font-size: 17px;
+    	pointer-events: none;
+    	transform: translateY(-50%);
+    	transition: all 0.3s ease;
+    }
+    form .field input:focus ~ label,form .field input:valid ~ label{
+    	top: 0%;
+    	font-size: 16px;
+    	color: black;
+    	background: #fff;
+    	transform: translateY(-50%);
+    }
+    form .contenu{
+    	display: flex;
+    	width: 100%;
+    	height: 50px;
+    	font-size: 16px;
+    	align-items: center;
+    	justify-content: space-around;
+    }
+    form .contenu .checkbox{
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    }
+    form .contenu input{
+    	width: 15px;
+    	height: 15px;
+    	background: red;
+    }
+    form .contenu label{
+    	color: black;
+    	user-select: none;
+    	padding-left: 5px;
+    }
+    form .content .pass-link{
+    	color: "";
+    }
+    form input[type="submit"]{
+    	color: #fff;
+    	border: none;
+    	padding-left: 0;
+    	margin-top: -10px;
+    	font-size: 20px;
+    	font-weight: 500;
+    	cursor: pointer;
+    	background: linear-gradient(-135deg, black, gray);
+    	transition: all 0.3s ease;
+    }
+    form .field input[type="submit"]:active{
+    	transform: scale(0.95);
+    }
+    form .signup-link{
+    	color: #262626;
+    	margin-top: 20px;
+    	text-align: center;
+    }
+    form .pass-link a,
+    form .signup-link a{
+    	color: #4158d0;
+    	text-decoration: none;
+    }
+    form .pass-link a:hover,
+    form .signup-link a:hover{
+    	text-decoration: underline;
+    }
+    .text-contenu {
+			background-color: #ffffff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}

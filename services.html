@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sportify - Consultation sportive en ligne</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id = "wrapper">
+		<header id = "titre">
+			<div class="titre-logo">
+			<h1> Sportify : Consultation Sportive</h1>
+			<img src="Sportify.jpg" height="130" width="200">
+			</div>
+		</header>
+		<nav>
+			<ul class="menu">
+				<li> <a href="main.html">Accueil</a></li>
+				<li> 
+					<div class="sous-menu">
+					<a href="parcours.html">Tout Parcourir</a>
+					<ul>
+						<li><a href="activites-sportives.html">Activités sportives</a></li>
+						<li><a href="sports-competition.html">Les Sports de compétition</a></li>
+						<li><a href="salle_OMNES.html">Salle de sport Omnes</a></li>
+					</ul>
+				</div>
+				</li>
+				<li> <a href="recherche.html">Recherche</a></li>
+				<li> <a href="rdv.html">Rendez-vous</a></li>
+				<li> <a href="compte.html">Votre Compte</a></li>
+			</ul>
+		</nav>
+		<section>
+		<div class="container">
+			<h3> Nos Services </h3>
+			<div id="services">	
+				<button id="charge_Button1"> Personnels de la salle de sport</button>
+				<div id="text_contenu1" class="text-contenu"></div>
+
+				<button id="charge_Button2"> Horaires de la gym </button>
+				<div id="text_contenu2" class="text-contenu"></div>
+
+				<button id="charge_Button3"> Règles sur l'utilisation des machines </button>
+				<div id="text_contenu3" class="text-contenu"></div>
+
+				<button id="charge_Button4"> Nouveaux clients </button>
+				<div id="text_contenu4" class="text-contenu"></div>
+
+				<button id="charge_Button5"> Alimentation & Nutrition </button>
+				<div id="text_contenu5" class="text-contenu"></div>
+			</div>	
+		</div>		
+		</section>
+		<footer>
+			<img src="carte.jpg" align="right" height="200" width="500">
+			<div class="coordonnées">
+				<h3> Contact </h3>
+				<p> E-mail : <a href="contact@sportify.com"> contact@sportify.com</a></p>
+				<p>Téléphone : <a href= "0784882957">0784882957</a></p>
+			</div>
+			<div class="adresse">
+				<h3> Adresse du siège social</h3>
+				<p> 10 Rue Sextius Michel</p>
+				<p> 75015 Paris, France</p>
+			</div>
+			
+		</footer>
+	</div>
+	<script>
+		document.getElementById("charge_Button1").addEventListener("click", function() {
+			var content = "Nos installations sportives de première classe sont spécialement conçues pour répondre à vos besoins et à vos préférences. Que vous souhaitiez vous adonner à des séances de musculation intenses pour renforcer votre corps, vous entraîner avec des exercices cardio-vasculaires dans notre espace dédié au cardio-training, participer à des cours collectifs stimulants ou profiter d'une séance de biking énergisante, Sportify a tout ce qu'il vous faut pour vivre une expérience sportive complète et gratifiante.Vous pourrez perfectionner vos compétences sportives en jouant au basketball, au football, au rugby, au tennis ou en plongeant dans notre piscine bien entretenue. Que vous soyez un amateur passionné ou un athlète expérimenté, nos installations sportives sont équipées pour répondre à tous les niveaux de pratique.De plus, nos instructeurs certifiés et expérimentés vous guideront à travers des cours collectifs dynamiques, tels que la Zumba, l'aérobic, le yoga et bien d'autres encore. Ces cours vous permettront de vous amuser tout en améliorant votre forme physique et votre bien-être général.Chez Sportify, nous nous engageons à vous offrir une expérience sportive exceptionnelle, avec un personnel amical et attentif qui se tient à votre disposition pour répondre à vos questions et vous fournir l'assistance dont vous avez besoin. Nous mettons tout en œuvre pour créer une ambiance chaleureuse et motivante, où vous pourrez vous entraîner en toute confiance et vous sentir soutenu dans l'atteinte de vos objectifs.Rejoignez-nous à Sportify et découvrez un environnement dynamique et stimulant, où vous pourrez pratiquer vos sports préférés, vous entraîner dans nos installations modernes et profiter de l'expertise de notre équipe de professionnels passionnés. Quel que soit votre choix d'activité sportive, nous sommes là pour vous accompagner sur le chemin de la réussite et de l'épanouissement physique.";
+			document.getElementById("text_contenu1").innerHTML = content;
+		});
+
+		document.getElementById("charge_Button2").addEventListener("click", function() {
+			var content = "Chers clients, nous sommes heureux de vous accueillir dans notre salle de sport. Nous sommes ouverts du lundi au dimanche, de 6h à 23h. Nous avons prolongé nos heures d'ouverture afin de vous offrir plus de flexibilité pour vous entraîner à l'heure qui vous convient le mieux. Nous sommes impatients de vous accompagner dans votre parcours de remise en forme. À bientôt !";
+			document.getElementById("text_contenu2").innerHTML = content;
+		});
+
+		document.getElementById("charge_Button3").addEventListener("click", function() {
+			var content = "Afin de garantir la sécurité et le bon fonctionnement de nos machines, nous avons mis en place quelques règles à suivre lors de leur utilisation à Sportify :Consultez un professionnel : Si vous êtes nouveau dans l'utilisation d'une machine spécifique ou si vous avez des questions sur son fonctionnement, n'hésitez pas à demander l'aide d'un membre du personnel de Sportify. Nos instructeurs et entraîneurs personnels sont là pour vous guider et vous assurer une utilisation correcte et efficace des machines. Réglez les machines correctement : Avant de commencer votre séance d'entraînement, assurez-vous de régler les machines en fonction de votre taille et de vos préférences. Ajustez les sièges, les repose-pieds, les poignées et les résistances selon vos besoins pour éviter toute tension ou blessure inutile. Respectez les instructions d'utilisation : Chaque machine a ses propres instructions d'utilisation affichées à proximité. Prenez le temps de les lire attentivement avant de commencer. Suivez les consignes de sécurité, les indications sur les mouvements à effectuer et les charges recommandées. Utilisez les machines selon leur objectif : Chaque machine a été conçue pour cibler des groupes musculaires spécifiques et des mouvements particuliers. Utilisez les machines conformément à leur objectif initial pour obtenir les meilleurs résultats. Évitez de modifier les exercices de manière excessive ou de les utiliser d'une manière non recommandée. Respectez les temps d'utilisation : Si la salle de sport est fréquentée et que d'autres membres attendent leur tour, veuillez respecter les temps d'utilisation recommandés pour chaque machine. Limitez votre temps d'utilisation pendant les périodes de forte affluence afin de permettre à tous de profiter des équipements. Nettoyez après utilisation : Après avoir utilisé une machine, prenez quelques instants pour la nettoyer et la désinfecter. Utilisez les produits de nettoyage fournis pour essuyer les surfaces en contact avec votre peau afin de maintenir un environnement propre et hygiénique pour tous. Soyez courtois et attentif : Faites preuve de courtoisie envers les autres membres de la salle de sport. Laissez-les terminer leurs séries d'exercices avant de demander à utiliser une machine. Respectez l'espace personnel des autres et évitez de monopoliser une machine pendant de longues périodes lorsque d'autres personnes attendent.En suivant ces règles simples, vous contribuez à créer un environnement sûr, agréable et respectueux pour tous les utilisateurs des machines à Sportify.";
+			document.getElementById("text_contenu3").innerHTML = content;
+		});
+
+		document.getElementById("charge_Button4").addEventListener("click", function() {
+			var content = "Pour nos nouveaux clients, nous sommes ravis de vous accueillir à Sportify ! Nous comprenons que commencer dans une nouvelle salle de sport peut être excitant et parfois intimidant. Voici quelques informations utiles pour vous aider à vous familiariser avec notre établissement : Visite guidée : À votre arrivée, nous serons heureux de vous proposer une visite guidée de nos installations. Notre personnel d'accueil se fera un plaisir de vous montrer les différentes zones, équipements et services que nous proposons. N'hésitez pas à poser des questions et à exprimer vos besoins spécifiques.Évaluation physique : Si vous le souhaitez, nous pouvons vous proposer une évaluation physique initiale. Cela nous permettra de mieux comprendre vos objectifs, votre niveau de condition physique actuel et de vous conseiller sur les meilleurs programmes d'entraînement adaptés à vos besoins.Programme d'entraînement personnalisé : Nos entraîneurs personnels expérimentés sont disponibles pour vous aider à élaborer un programme d'entraînement personnalisé en fonction de vos objectifs et de vos capacités. Ils vous guideront à travers les différents exercices et machines, vous montreront les bonnes techniques et vous fourniront des conseils pour maximiser vos séances d'entraînement. Cours collectifs : Nous proposons une variété de cours collectifs passionnants, adaptés à tous les niveaux. Que vous soyez intéressé par le yoga, la Zumba, le HIIT ou d'autres activités, nos instructeurs qualifiés vous accompagneront dans des séances stimulantes et motivantes. Assistance et soutien : Notre équipe est là pour répondre à toutes vos questions et vous apporter une assistance tout au long de votre parcours. N'hésitez pas à solliciter l'aide de nos membres du personnel pour des conseils sur l'utilisation des machines, des recommandations d'exercices ou toute autre demande que vous pourriez avoir. Ressources supplémentaires : Nous mettons également à votre disposition des ressources supplémentaires telles que des articles de blog, des vidéos d'exercices et des programmes d'entraînement en ligne pour vous aider à rester motivé et à progresser vers vos objectifs, même en dehors de la salle de sport. Chez Sportify, nous souhaitons que votre expérience soit agréable, positive et couronnée de succès. Nous sommes là pour vous accompagner à chaque étape de votre parcours de remise en forme. Nous vous encourageons à profiter pleinement de nos installations, de nos programmes et du soutien de notre équipe afin de tirer le meilleur parti de votre adhésion à Sportify.";
+			document.getElementById("text_contenu4").innerHTML = content;
+		});
+
+		document.getElementById("charge_Button5").addEventListener("click", function() {
+			var content = "Conseil: Manger Bio";
+			document.getElementById("text_contenu5").innerHTML = content;
+		});
+	</script>
+</body>
+</html>

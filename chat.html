@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sportify : Consultation Sportive - Chatroom</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="wrapper">
+    <!-- Enveloppe principale de la page -->
+
+    <header id="titre">
+      <!-- En-tête de la page -->
+      <div class="titre-logo">
+        <!-- Div pour le logo et le titre -->
+        <h1>Sportify : Consultation Sportive</h1>
+        <img src="Sportify.jpg" height="130" width="200">
+      </div>
+    </header>
+
+    <nav>
+      <!-- Navigation principale -->
+      <ul class="menu">
+        <!-- Liste des éléments de navigation -->
+        <li><a href="main.html">Accueil</a></li>
+        <li>
+          <!-- Élément de navigation avec sous-menu -->
+          <div class="sous-menu">
+            <a href="parcours.html">Tout Parcourir</a>
+            <ul>
+              <!-- Liste des éléments du sous-menu -->
+              <li><a href="activites-sportives.html">Activités sportives</a></li>
+              <li><a href="sports-competition.html">Les Sports de compétition</a></li>
+              <li><a href="salle_OMNES.html">Salle de sport Omnes</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="recherche.html">Recherche</a></li>
+        <li><a href="rdv.html">Rendez-vous</a></li>
+        <li><a href="compte.html">Votre Compte</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <!-- Section pour le formulaire de connexion -->
+      <div class="container">
+        <h3> Connexion </h3>
+        <div class="login-wrapper">
+          <form action="connect.php" method="post">
+       <!--Redirection vers la page connect php qui traite la connexion d'une personne-->
+            <div class="field">
+              <input type="text" name="email" required>
+              <label> Adresse-Mail</label>
+            </div>
+            <div class="field">
+              <input type="password" name="password" required>
+              <label>Mot de Passe</label>
+            </div>
+            <div class="contenu">
+              <div class="checkbox">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me"> Souvenir de moi </label>
+              </div>
+              <div class="pass-link">
+                <a href="#"> Mot de Passe Perdu</a>
+              </div>
+            </div>
+            <div class="field">
+              <input type="submit" value="Se connecter">
+            </div>
+            <div class="signup-link">
+              Vous n'êtes pas membre ? <a href="inscription.html"> Inscrivez-vous </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <img src="carte.jpg" align="right" height="200" width="500">
+      <div class="coordonnées">
+        <h3>Contact</h3>
+        <p>E-mail : <a href="contact@sportify.com">contact@sportify.com</a></p>
+        <p>Téléphone : <a href= "0784882957">0784882957</a></p>
+      </div>
+      <div class="adresse">
+        <h3>Adresse du siège social</h3>
+        <p>10 Rue Sextius Michel</p>
+        <p>75015 Paris, France</p>
+      </div>
+    </footer>
+  </div>
+</body>
+<!--
+La balise <body> est le conteneur principal pour le contenu de la page. Le contenu est 
+enveloppé dans une balise <div> avec l'ID "wrapper" pour une mise en page plus facile.
+L'en-tête de la page est contenu dans une balise <header> avec l'ID "titre". 
+Il contient un élément <div> avec la classe "titre-logo" qui affiche le
+titre "Sportify : Consultation Sportive" et une image "Sportify.jpg" 
+de taille 130x200 pixels.
+-->
+</html>

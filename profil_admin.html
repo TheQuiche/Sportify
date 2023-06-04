@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sportify - Consultation sportive en ligne - Profil admin </title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div id = "wrapper">
+		<header id = "titre">
+			<div class="titre-logo">
+			<h1> Sportify : Consultation Sportive</h1>
+			<img src="Sportify.jpg" height="130" width="200">
+			</div>
+		</header>
+		<nav>
+			<ul class="menu">
+				<li> <a href="main.html">Accueil</a></li>
+				<li> 
+					<div class="sous-menu">
+					<a href="parcours.html">Tout Parcourir</a>
+					<ul>
+						<li><a href="activites-sportives.html">Activités sportives</a></li>
+						<li><a href="sports-competition.html">Les Sports de compétition</a></li>
+						<li><a href="salle_OMNES.html">Salle de sport Omnes</a></li>
+					</ul>
+				</div>
+				</li>
+				<li> <a href="recherche.html">Recherche</a></li>
+				<li> <a href="rdv.html">Rendez-vous</a></li>
+				<li> <a href="compte.html">Votre Compte</a></li>
+			</ul>
+		</nav>
+		<section>
+			    <div class="container">
+			    	<h3>Profil Administrateur</h3>
+			    	
+			    	 <div class="login-wrapper">
+			    	 		<form>
+			    	 			<h2>Ajouter un Coach/Professionnel du Sport</h2>
+			    	 			<label for="coachID">Numéro d'identification :</label><br>
+			    	 			<input type="text" id="coachID" name="coachID"><br>
+			    	 			<label for="coachName">Nom :</label><br>
+			    	 			<input type="text" id="coachName" name="coachName"><br>
+			    	 			<label for="coachPhoto">Photo :</label><br>
+			    	 			<input type="file" id="coachPhoto" name="coachPhoto"><br>
+			    	 			<label for="coachSpecialty">Spécialité :</label><br>
+			    	 			<input type="text" id="coachSpecialty" name="coachSpecialty"><br>
+			    	 			<label for="coachVideo">Vidéo :</label><br>
+			    	 			<input type="file" id="coachVideo" name="coachVideo"><br>
+			    	 			<label for="coachCV">CV :</label><br>
+			    	 			<input type="file" id="coachCV" name="coachCV"><br>
+			    	 			<label for="coachAvailability">Disponibilité de la semaine :</label><br>
+			    	 			<input type="text" id="coachAvailability" name="coachAvailability"><br>
+			    	 			<label for="coachEmail">Courriel :</label><br>
+			    	 			<input type="email" id="coachEmail" name="coachEmail"><br>
+			    	 			<label for="coachChatAccount">Compte de chat (texto, audio, vidéo) :</label><br>
+			    	 			<input type="text" id="coachChatAccount" name="coachChatAccount"><br>
+			    	 			<button type="submit">Ajouter</button><br>
+			    	 		</form>
+			    	 	
+			    	 	<form>
+			    	 		<h2>Supprimer un Coach/Professionnel du Sport</h2>
+			    	 		<label for="coachIDToDelete">Numéro d'identification :</label><br>
+			    	 		<input type="text" id="coachIDToDelete" name="coachIDToDelete"><br>
+			    	 		<button type="submit">Supprimer</button>
+			    	 	</form>
+			    	 	
+			    	 	<form>
+			    	 		<h2>Créer un fichier XML pour le CV d'un Coach</h2>
+			    	 		<label for="coachIDForXML">Numéro d'identification :</label><br>
+			    	 		<input type="text" id="coachIDForXML" name="coachIDForXML"><br>
+			    	 		<label for="coachXML">Fichier XML :</label><br>
+			    	 		<input type="file" id="coachXML" name="coachXML"><br>
+			    	 		<button type="submit">Créer</button><br>
+			    	 	</form>
+			    	 	
+			    	 	<form>
+			    	 		<h2>Informations de la Salle de Sport Omnes</h2>
+			    	 		<label for="gymInfo">Informations :</label><br>
+			    	 		<textarea id="gymInfo" name="gymInfo"></textarea><br>
+			    	 		<label for="gymAvailability">Disponibilité du Personnel de Sport :</label><br>
+			    	 		<input type="text" id="gymAvailability" name="gymAvailability"><br>
+			    	 		<button type="submit">Mettre à jour</button><br>
+			    	 	</form>
+			    	 </div>
+			    	</div>
+		</section>
+		<footer>
+			<img src="carte.jpg" align="right" height="200" width="500">
+			<div class="coordonnées">
+				<h3> Contact </h3>
+				<p> E-mail : <a href="contact@sportify.com"> contact@sportify.com</a></p>
+				<p>Téléphone : <a href= "0784882957">0784882957</a></p>
+			</div>
+			<div class="adresse">
+				<h3> Adresse du siège social</h3>
+				<p> 10 Rue Sextius Michel</p>
+				<p> 75015 Paris, France</p>
+			</div>
+			
+		</footer>
+</div>
+</body>
+</html>
